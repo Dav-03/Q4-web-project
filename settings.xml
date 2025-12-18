@@ -1,0 +1,35 @@
+<settings>
+
+<servers>
+  <server>
+    <id>david-college-projects-nextwork-devops-cisd</id>
+    <username>aws</username>
+    <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+  </server>
+</servers>
+
+<profiles>
+  <profile>
+    <id>david-college-projects-nextwork-devops-cisd</id>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
+    <repositories>
+      <repository>
+        <id>david-college-projects-nextwork-devops-cisd</id>
+        <url>https://david-college-projects-528757827860.d.codeartifact.us-west-2.amazonaws.com/maven/nextwork-devops-cisd/</url>
+      </repository>
+    </repositories>
+  </profile>
+</profiles>
+
+<mirrors>
+  <mirror>
+    <id>david-college-projects-nextwork-devops-cisd</id>
+    <name>david-college-projects-nextwork-devops-cisd</name>
+    <url>https://david-college-projects-528757827860.d.codeartifact.us-west-2.amazonaws.com/maven/nextwork-devops-cisd/</url>
+    <mirrorOf>*</mirrorOf>
+  </mirror>
+</mirrors>
+
+</settings>

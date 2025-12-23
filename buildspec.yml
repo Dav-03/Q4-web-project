@@ -8,10 +8,6 @@ phases:
     commands:
       - echo Initializing environment
       - export CODEARTIFACT_AUTH_TOKEN=`aws codeartifact get-authorization-token --domain david-college-projects --domain-owner 528757827860 --region us-west-2 --query authorizationToken --output text`
-<<<<<<< HEAD:buildspec.yml
-=======
-
->>>>>>> 0461eda9abe7a00c45cdd5d9c27bc07fce6ca0d3:buildspec.yaml
   build:
     commands:
       - echo Build started on `date`
